@@ -5,7 +5,7 @@ This project is an automated workflow that scrapes chemistry research articles f
 ## Workflow Overview
 
 1. **RSS Feed Scraping** (`rss_scraper.py`): 
-   - Fetches the latest chemistry news from phys.org's RSS feed
+   - Fetches the latest chemistry news from RSS feed
    - Saves article metadata and links to `chemistry_news.json`
 
 2. **Article Scraping** (`batch_article_scraper.py`):
@@ -63,6 +63,18 @@ This project is an automated workflow that scrapes chemistry research articles f
    3. Copy the key and paste it in your `.env` file
 
    Note: Never commit your `.env` file or share your API keys publicly.
+   Example of env file:
+   ```bash
+   # OpenAI Configuration
+   OPENAI_API_KEY=your_openai_api_key
+   OPENAI_API_BASE=https://api.openai.com/v1
+
+   # Rate Limiting
+   MIN_DELAY=60
+   MAX_DELAY=75
+   INITIAL_DELAY=5
+   MAX_DELAY_INITIAL=15
+   ```
 
 4. **Install Firefox Browser**
    - The scraper uses Firefox with Selenium
@@ -146,6 +158,4 @@ This project is an automated workflow that scrapes chemistry research articles f
    - Check if the port 8501 is available
    - Verify file permissions in the website directory
 
-## Contributing
 
-Feel free to submit issues and enhancement requests!
