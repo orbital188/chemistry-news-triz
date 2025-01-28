@@ -1,0 +1,165 @@
+{
+    "TRIZ_Principles": [
+      {
+        "Principle": "Segmentation",
+        "Explanation": "Divide an object or system into independent parts to simplify, improve efficiency, or make it more flexible."
+      },
+      {
+        "Principle": "Taking Out",
+        "Explanation": "Remove a troublesome or unnecessary component from a system."
+      },
+      {
+        "Principle": "Local Quality",
+        "Explanation": "Modify the system or object locally to adapt to specific conditions or requirements."
+      },
+      {
+        "Principle": "Asymmetry",
+        "Explanation": "Replace a symmetrical system with an asymmetrical one to improve efficiency or functionality."
+      },
+      {
+        "Principle": "Merging",
+        "Explanation": "Combine multiple systems, objects, or operations into a unified whole to simplify and improve performance."
+      },
+      {
+        "Principle": "Universality",
+        "Explanation": "Use a single system or component to perform multiple functions."
+      },
+      {
+        "Principle": "Nested Doll",
+        "Explanation": "Place one object inside another, like nested dolls, to save space or improve performance."
+      },
+      {
+        "Principle": "Anti-Weight",
+        "Explanation": "Use balancing weights or forces to counteract undesired effects of gravity or other forces."
+      },
+      {
+        "Principle": "Preliminary Anti-Action",
+        "Explanation": "Take preventive measures in advance to counteract potential problems."
+      },
+      {
+        "Principle": "Preliminary Action",
+        "Explanation": "Perform an action beforehand to simplify or prepare the system for the main operation."
+      },
+      {
+        "Principle": "Cushion in Advance",
+        "Explanation": "Prepare a backup system or use redundancy to mitigate potential issues."
+      },
+      {
+        "Principle": "Equipotentiality",
+        "Explanation": "Avoid the need to raise or lower objects by using systems that balance potential energy levels."
+      },
+      {
+        "Principle": "The Other Way Round",
+        "Explanation": "Invert the system or operation, such as turning it upside down, to solve a problem more effectively."
+      },
+      {
+        "Principle": "Spheroidality",
+        "Explanation": "Use rounded shapes or smooth transitions to improve efficiency and reduce stress points."
+      },
+      {
+        "Principle": "Dynamicity",
+        "Explanation": "Make the system or object adaptable or movable to improve functionality or efficiency."
+      },
+      {
+        "Principle": "Partial or Excessive Action",
+        "Explanation": "Perform the operation partially or excessively to achieve the desired result."
+      },
+      {
+        "Principle": "Another Dimension",
+        "Explanation": "Move a system to a different spatial dimension to simplify or improve its operation."
+      },
+      {
+        "Principle": "Mechanical Vibration",
+        "Explanation": "Use vibrations or oscillations to enhance the operation or functionality of a system."
+      },
+      {
+        "Principle": "Periodic Action",
+        "Explanation": "Use periodic motion or interruptions to improve the system or reduce resource usage."
+      },
+      {
+        "Principle": "Continuity of Useful Action",
+        "Explanation": "Ensure the operation runs continuously without unnecessary stops or delays."
+      },
+      {
+        "Principle": "Skipping",
+        "Explanation": "Perform an operation quickly or skip certain steps to enhance efficiency."
+      },
+      {
+        "Principle": "Blessing in Disguise",
+        "Explanation": "Use a harmful effect or a problem as an advantage or solution."
+      },
+      {
+        "Principle": "Feedback",
+        "Explanation": "Introduce feedback loops to monitor and improve the system's performance dynamically."
+      },
+      {
+        "Principle": "Intermediary",
+        "Explanation": "Use an intermediary system or object to connect or facilitate between components."
+      },
+      {
+        "Principle": "Self-Service",
+        "Explanation": "Make a system capable of self-maintenance, self-repair, or self-operation."
+      },
+      {
+        "Principle": "Copying",
+        "Explanation": "Use a replica or imitation of the system instead of the original for testing or operation."
+      },
+      {
+        "Principle": "Cheap Short-Lived Objects",
+        "Explanation": "Use inexpensive, disposable objects for temporary operations or as prototypes."
+      },
+      {
+        "Principle": "Mechanical Substitution",
+        "Explanation": "Replace mechanical components with alternative systems like electronics, optics, or chemicals."
+      },
+      {
+        "Principle": "Pneumatics and Hydraulics",
+        "Explanation": "Use fluids or gases to achieve desired operations instead of mechanical systems."
+      },
+      {
+        "Principle": "Flexible Shells and Thin Films",
+        "Explanation": "Use flexible materials to adapt to changing conditions or improve performance."
+      },
+      {
+        "Principle": "Porous Materials",
+        "Explanation": "Use materials with porosity for improved functionality, such as filtering or absorption."
+      },
+      {
+        "Principle": "Color Changes",
+        "Explanation": "Change the color or appearance of the system to convey information or enhance functionality."
+      },
+      {
+        "Principle": "Homogeneity",
+        "Explanation": "Ensure uniformity or consistency within the system to improve reliability."
+      },
+      {
+        "Principle": "Discarding and Recovering",
+        "Explanation": "Remove or discard unnecessary parts and recycle useful ones to optimize the system."
+      },
+      {
+        "Principle": "Parameter Changes",
+        "Explanation": "Adjust system parameters such as temperature, pressure, or speed to improve performance."
+      },
+      {
+        "Principle": "Phase Transitions",
+        "Explanation": "Use phase transitions, such as solid-to-liquid or liquid-to-gas, to achieve desired results."
+      },
+      {
+        "Principle": "Thermal Expansion",
+        "Explanation": "Use thermal expansion or contraction to simplify or enhance a system."
+      },
+      {
+        "Principle": "Strong Oxidants",
+        "Explanation": "Introduce oxygen or other reactive agents to improve efficiency or performance."
+      },
+      {
+        "Principle": "Inert Atmosphere",
+        "Explanation": "Use an inert environment to protect sensitive systems or components."
+      },
+      {
+        "Principle": "Composite Materials",
+        "Explanation": "Combine materials with different properties to achieve superior performance."
+      }
+    ]
+  }
+  
