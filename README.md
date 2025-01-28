@@ -41,11 +41,28 @@ This project is an automated workflow that scrapes chemistry research articles f
    pip install -r requirements.txt
    ```
 
-3. **Set up Environment Variables**
-   Create a `.env` file in the root directory with the following:
+3. **Environment Setup**
+
+1. **Create Environment File**
+   ```bash
+   # Copy the example environment file
+   cp .env.example .env
    ```
-   OPENAI_API_KEY=your_openai_api_key_here
+
+2. **Configure Environment Variables**
+   Open `.env` and configure the following variables:
    ```
+   # OpenAI Configuration
+   OPENAI_API_KEY=your_openai_api_key
+   OPENAI_API_BASE=https://api.openai.com/v1
+   ```
+   
+   To get your OpenAI API key:
+   1. Go to https://platform.openai.com/api-keys
+   2. Create a new API key
+   3. Copy the key and paste it in your `.env` file
+
+   Note: Never commit your `.env` file or share your API keys publicly.
 
 4. **Install Firefox Browser**
    - The scraper uses Firefox with Selenium
