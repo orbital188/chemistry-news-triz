@@ -1,6 +1,6 @@
 # Chemistry News Analysis with TRIZ Principles
 
-This project is an automated workflow that scrapes chemistry research articles from phys.org, analyzes them through the lens of TRIZ principles using GPT-4, and presents them in a beautiful Streamlit web interface.
+This project is an automated workflow that scrapes chemistry research articles from phys.org, analyzes them through the lens of TRIZ principles using GPT-4 or DeepSeek-Chat, and presents them in a beautiful Streamlit web interface.
 
 ## Workflow Overview
 
@@ -13,13 +13,13 @@ This project is an automated workflow that scrapes chemistry research articles f
    - Uses Selenium with Firefox to scrape full article content
    - Saves individual articles to the `scraped_articles` directory
 
-3. **GPT Analysis** (`gpt_article_analyzer.py`):
-   - Processes scraped articles using GPT-4
+3. **AI Analysis** (`gpt_article_analyzer.py` or `deepseek_article_analyzer.py`):
+   - Processes scraped articles using GPT-4 or DeepSeek-Chat
    - Analyzes innovation and TRIZ principles in each article
-   - Saves analysis to the `gpt_processed` directory
+   - Saves analysis to the `gpt_processed` or `deepseek_processed` directory
 
 4. **Article Generation** (`article_generator.py`):
-   - Takes GPT-analyzed content and generates comprehensive articles
+   - Takes AI-analyzed content and generates comprehensive articles
    - Focuses on innovation analysis and TRIZ principles
    - Saves generated articles to the `generated_articles` directory
 
@@ -63,10 +63,19 @@ This project is an automated workflow that scrapes chemistry research articles f
 
 2. **Configure Environment Variables**
    Open `.env` and configure the following variables:
-   ```
-   # OpenAI Configuration
+   ```bash
+   # OpenAI Configuration (for GPT-4)
    OPENAI_API_KEY=your_openai_api_key
    OPENAI_API_BASE=https://api.openai.com/v1
+
+   # DeepSeek Configuration (for DeepSeek-Chat)
+   DEEPSEEK_API_KEY=your_deepseek_api_key
+
+   # Rate Limiting
+   MIN_DELAY=60
+   MAX_DELAY=75
+   INITIAL_DELAY=5
+   MAX_DELAY_INITIAL=15
    ```
    
    To get your OpenAI API key:
@@ -74,12 +83,20 @@ This project is an automated workflow that scrapes chemistry research articles f
    2. Create a new API key
    3. Copy the key and paste it in your `.env` file
 
+   To get your DeepSeek API key:
+   1. Visit DeepSeek's platform
+   2. Create an API key
+   3. Copy the key and paste it in your `.env` file
+
    Note: Never commit your `.env` file or share your API keys publicly.
    Example of env file:
    ```bash
-   # OpenAI Configuration
+   # OpenAI Configuration (for GPT-4)
    OPENAI_API_KEY=your_openai_api_key
    OPENAI_API_BASE=https://api.openai.com/v1
+
+   # DeepSeek Configuration (for DeepSeek-Chat)
+   DEEPSEEK_API_KEY=your_deepseek_api_key
 
    # Rate Limiting
    MIN_DELAY=60
@@ -142,9 +159,16 @@ This project is an automated workflow that scrapes chemistry research articles f
    python batch_article_scraper.py
    ```
 
-3. **Analyze with GPT**
+3. **Analyze with AI**
+   
+   For GPT-4 analysis:
    ```bash
    python gpt_article_analyzer.py
+   ```
+
+   For DeepSeek analysis:
+   ```bash
+   python deepseek_article_analyzer.py
    ```
 
 4. **Generate Articles**
@@ -167,7 +191,9 @@ This project is an automated workflow that scrapes chemistry research articles f
 ├── batch_article_scraper.py # Article content scraper
 ├── scraped_articles/        # Raw scraped articles
 ├── gpt_article_analyzer.py  # GPT analysis script
+├── deepseek_article_analyzer.py  # DeepSeek analysis script
 ├── gpt_processed/          # GPT-analyzed articles
+├── deepseek_processed/     # DeepSeek-analyzed articles
 ├── article_generator.py     # Article generation script
 ├── generated_articles/     # Final generated articles
 └── website/                # Streamlit web interface
@@ -203,7 +229,12 @@ This project is an automated workflow that scrapes chemistry research articles f
    - Check your API quota and usage limits
    - Ensure your network can access OpenAI's API
 
-3. **Streamlit Issues**:
+3. **DeepSeek API Issues**:
+   - Verify your DeepSeek API key is correct
+   - Check your API quota and usage limits
+   - Ensure your network can access DeepSeek's API
+
+4. **Streamlit Issues**:
    - Make sure all required packages are installed
    - Check if the port 8501 is available
    - Verify file permissions in the website directory
