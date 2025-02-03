@@ -92,6 +92,44 @@ This project is an automated workflow that scrapes chemistry research articles f
    - The scraper uses Firefox with Selenium
    - Make sure Firefox is installed on your system
 
+   **For Ubuntu Users:**
+   ```bash
+   # Remove Firefox if it was installed via snap
+   sudo snap remove firefox
+
+   # Add Mozilla team PPA
+   sudo add-apt-repository ppa:mozillateam/ppa
+
+   # Install Firefox from APT
+   sudo apt update
+   sudo apt install firefox
+   ```
+
+6. **Install GeckoDriver (Required for Selenium)**
+   
+   **For Ubuntu Users:**
+   ```bash
+   # Install wget if not already installed
+   sudo apt install wget
+
+   # Download the latest geckodriver
+   wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz
+
+   # Extract the archive
+   tar -xvzf geckodriver-v0.33.0-linux64.tar.gz
+
+   # Make the geckodriver executable
+   chmod +x geckodriver
+
+   # Move geckodriver to /usr/local/bin
+   sudo mv geckodriver /usr/local/bin/
+
+   # Clean up the archive
+   rm geckodriver-v0.33.0-linux64.tar.gz
+   ```
+
+   Note: The Firefox version installed through APT is more compatible with Selenium compared to the snap-installed version. If you experience any issues with Firefox or geckodriver, make sure you're using the APT version of Firefox.
+
 ## Running the Workflow
 
 1. **Scrape RSS Feed**
