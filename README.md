@@ -36,12 +36,24 @@ This project is an automated workflow that scrapes chemistry research articles f
    cd <repository-directory>
    ```
 
-2. **Install Dependencies**
+2. **Virtual Environment Setup**
+   ```bash
+   # Create a virtual environment
+   python -m venv venv
+
+   # Activate the virtual environment
+   # On Windows:
+   .\venv\Scripts\activate
+   # On Unix or MacOS:
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Environment Setup**
+4. **Environment Setup**
 
 1. **Create Environment File**
    ```bash
@@ -76,7 +88,7 @@ This project is an automated workflow that scrapes chemistry research articles f
    MAX_DELAY_INITIAL=15
    ```
 
-4. **Install Firefox Browser**
+5. **Install Firefox Browser**
    - The scraper uses Firefox with Selenium
    - Make sure Firefox is installed on your system
 
@@ -157,5 +169,3 @@ This project is an automated workflow that scrapes chemistry research articles f
    - Make sure all required packages are installed
    - Check if the port 8501 is available
    - Verify file permissions in the website directory
-
-
